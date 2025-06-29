@@ -1,0 +1,95 @@
+// cards.js
+const cards = [
+  {
+    name: "神奇电风扇",
+    description: "风速可调，沙雕必备！",
+    rarity: "Common",
+    image: "/placeholder.png",
+    sound: "common.mp3",
+    weight: 50,
+  },
+  {
+    name: "自动翻书器",
+    description: "学习懒人神器。",
+    rarity: "Common",
+    image: "/placeholder.png",
+    sound: "common.mp3",
+    weight: 50,
+  },
+  {
+    name: "自带BGM拖鞋",
+    description: "每走一步都伴随节奏！",
+    rarity: "Rare",
+    image: "/placeholder.png",
+    sound: "rare.mp3",
+    weight: 30,
+  },
+  {
+    name: "闪光自拍帽",
+    description: "自拍角度永远完美。",
+    rarity: "Rare",
+    image: "/placeholder.png",
+    sound: "rare.mp3",
+    weight: 30,
+  },
+  {
+    name: "空气吉他",
+    description: "演奏你的无声摇滚！",
+    rarity: "Epic",
+    image: "/placeholder.png",
+    sound: "epic.mp3",
+    weight: 10,
+  },
+  {
+    name: "咸鱼罐头空调",
+    description: "打开即咸，凉爽一夏。",
+    rarity: "Epic",
+    image: "/placeholder.png",
+    sound: "epic.mp3",
+    weight: 10,
+  },
+  {
+    name: "时间暂停遥控器",
+    description: "按了也不会发生任何事。",
+    rarity: "Legendary",
+    image: "/placeholder.png",
+    sound: "legendary.mp3",
+    weight: 5,
+  },
+  {
+    name: "自动找借口神器",
+    description: "为你编出999个理由。",
+    rarity: "Legendary",
+    image: "/placeholder.png",
+    sound: "legendary.mp3",
+    weight: 5,
+  },
+  {
+    name: "隐形假装面罩",
+    description: "戴上谁都不认识你。",
+    rarity: "Secret",
+    image: "/placeholder.png",
+    sound: "secret.mp3",
+    weight: 1,
+  },
+  {
+    name: "传说中的小鱼干",
+    description: "喵星人梦寐以求。",
+    rarity: "Secret",
+    image: "/placeholder.png",
+    sound: "secret.mp3",
+    weight: 1,
+  },
+
+  // 🔁 重复10个普通/稀有道具（可自由更换名称和图）
+  ...Array.from({ length: 10 }, (_, i) => ({
+    name: `沙雕物品${i + 11}`,
+    description: `这是第${i + 11}个奇葩物品。`,
+    rarity: ["Common", "Rare", "Epic", "Legendary"][i % 4],
+    image: "/placeholder.png",
+    sound: ["common", "rare", "epic", "legendary"][i % 4] + ".mp3",
+    weight: [50, 30, 10, 5][i % 4],
+  })),
+];
+
+export default cards;
