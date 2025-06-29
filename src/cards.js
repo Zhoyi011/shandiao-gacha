@@ -1,5 +1,5 @@
-// cards.js
 const cards = [
+  // ✅ 你刚刚给的 10 张
   {
     name: "神奇电风扇",
     description: "风速可调，沙雕必备！",
@@ -81,15 +81,127 @@ const cards = [
     weight: 1,
   },
 
-  // 🔁 重复10个普通/稀有道具（可自由更换名称和图）
-  ...Array.from({ length: 10 }, (_, i) => ({
-    name: `沙雕物品${i + 11}`,
-    description: `这是第${i + 11}个奇葩物品。`,
-    rarity: ["Common", "Rare", "Epic", "Legendary"][i % 4],
-    image: "/placeholder.png",
-    sound: ["common", "rare", "epic", "legendary"][i % 4] + ".mp3",
-    weight: [50, 30, 10, 5][i % 4],
-  })),
+  // ✅ 我提供的 15 张
+  {
+    name: "灵魂出窍的拖鞋",
+    image: "/images/slipper.png",
+    rarity: "Epic",
+    description: "传说被它打过的人会学会飞。",
+    sound: "epic.mp3",
+    weight: 5,
+  },
+  {
+    name: "毁灭友情的UNO卡",
+    image: "/images/uno.png",
+    rarity: "Legendary",
+    description: "一张“+4”胜过千言万语。",
+    sound: "legendary.mp3",
+    weight: 2,
+  },
+  {
+    name: "可乐味眼泪",
+    image: "/images/cola_tear.png",
+    rarity: "Rare",
+    description: "喜悦与痛苦的结晶。",
+    sound: "rare.mp3",
+    weight: 10,
+  },
+  {
+    name: "摆烂大师奖杯",
+    image: "/images/bailan_trophy.png",
+    rarity: "Epic",
+    description: "坐着就能赢的信仰道具。",
+    sound: "epic.mp3",
+    weight: 5,
+  },
+  {
+    name: "过期的好运符",
+    image: "/images/bad_luck_charm.png",
+    rarity: "Common",
+    description: "看起来很强，其实全靠运气。",
+    sound: "common.mp3",
+    weight: 20,
+  },
+  {
+    name: "无线耳机的单只",
+    image: "/images/one_airpod.png",
+    rarity: "Common",
+    description: "它的另一半还在路上。",
+    sound: "common.mp3",
+    weight: 20,
+  },
+  {
+    name: "真·自动熄火打火机",
+    image: "/images/lighter.png",
+    rarity: "Rare",
+    description: "永远点不着但不甘心丢。",
+    sound: "rare.mp3",
+    weight: 10,
+  },
+  {
+    name: "泡面守护神",
+    image: "/images/noodle_guardian.png",
+    rarity: "Rare",
+    description: "每一口泡面都值得守护。",
+    sound: "rare.mp3",
+    weight: 10,
+  },
+  {
+    name: "穿越型遥控器",
+    image: "/images/timetravel_remote.png",
+    rarity: "Epic",
+    description: "按一下，时间没变你变了。",
+    sound: "epic.mp3",
+    weight: 4,
+  },
+  {
+    name: "复制粘贴的作业本",
+    image: "/images/copypaste_book.png",
+    rarity: "Common",
+    description: "同一个世界，同一份答案。",
+    sound: "common.mp3",
+    weight: 20,
+  },
+  {
+    name: "爱情过山车票根",
+    image: "/images/love_ticket.png",
+    rarity: "Legendary",
+    description: "刺激又令人晕眩的纪念。",
+    sound: "legendary.mp3",
+    weight: 2,
+  },
+  {
+    name: "独角兽的最后一根毛",
+    image: "/images/unicorn_hair.png",
+    rarity: "Secret",
+    description: "谁薅的，说出来不打你。",
+    sound: "secret.mp3",
+    weight: 1,
+  },
+  {
+    name: "咕咕咕鸽子勋章",
+    image: "/images/gugu_medal.png",
+    rarity: "Epic",
+    description: "专为爽约者打造的荣誉标志。",
+    sound: "epic.mp3",
+    weight: 5,
+  },
+  {
+    name: "神秘消失的橡皮",
+    image: "/images/vanish_eraser.png",
+    rarity: "Rare",
+    description: "总在你需要它时离你而去。",
+    sound: "rare.mp3",
+    weight: 8,
+  },
+  {
+    name: "老师看不到的小抄",
+    image: "/images/invisible_cheat.png",
+    rarity: "Rare",
+    description: "但你自己也看不到了 🤡。",
+    sound: "rare.mp3",
+    weight: 9,
+  },
 ];
 
 export default cards;
